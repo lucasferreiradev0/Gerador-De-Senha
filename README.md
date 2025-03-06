@@ -2,6 +2,6 @@
  Gerador de Senhas Aleatórias
 
 ## Recursos
-- javascript
+- Javascript
 - HTML
 - CSS
