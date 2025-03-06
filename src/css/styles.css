@@ -22,7 +22,7 @@ body {
 #container_gerador {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px 0;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -31,8 +31,14 @@ body {
 }
 h1 {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 10px;
+}
+#qtdeCaracteres {
+    width: 60px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #003840;
 }
 
 #box_ckecked {
@@ -46,5 +52,42 @@ h1 {
         cursor: pointer;
         border-radius: 5px;
         background-color: #cccccc8c;
-    }
+    } 
+}
+input[type="checkbox"] {
+    accent-color: #007369;
+}
+#box_password {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    border: 1px solid #BFBFBF;
+    padding: 6px 10px;
+    border-radius: 5px;
+    width: 70%;
+    margin-top: 5px;
+}
+#password {
+    color: #4d4c4c;
+}
+#btn_copy {
+    background: none;
+    border: none;
+    color: #a8a7a7;
+    cursor: pointer;
+}
+#btn_gerar {
+    border: none;
+    color: #fff;
+    background-color: #003840;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color .5s ease, box-shadow .5s ease;
+}
+#btn_gerar:hover {
+    background-color: #00262c;
+    box-shadow: 0 0 8px #00262c;
 }
