@@ -10,6 +10,7 @@
 
 body {
     background-color: #BFBFBF;
+    overflow: hidden;
 }
 
 #container {
@@ -59,22 +60,28 @@ input[type="checkbox"] {
 }
 #box_password {
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    border: 1px solid #BFBFBF;
-    padding: 6px 10px;
-    border-radius: 5px;
-    width: 70%;
-    margin-top: 5px;
 }
-#password {
-    color: #4d4c4c;
-}
-#btn_copy {
+#password{
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
     background: none;
-    border: none;
-    color: #a8a7a7;
+}
+#password:focus {
+    outline: none;
+}
+#btn_copy{
+    background: none;
+    border: 1px solid #ccc;
+    border-left: none;
+    padding-inline: 5px;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
+    color: #666666;
+}
+#btn_copy:hover {
+    color: #000;
 }
 #btn_gerar {
     border: none;
