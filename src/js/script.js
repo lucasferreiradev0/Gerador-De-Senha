@@ -87,8 +87,12 @@ function showModal(bgColor, text) {
 
 
 document.querySelector('#btn_copy').addEventListener('click', () => {
-    let password = document.querySelector('#password')
-    password.select()
-    document.execCommand('copy')
-    showModal('#035931', 'Senha copiada com sucesso!')
+    let password = document.querySelector('#password').value
+    if(password.length >= 1){
+        document.querySelector('#password').select()
+        document.execCommand('copy')
+        showModal('#035931', 'Senha copiada com sucesso!')
+    } else {
+        showModal('#03658C', 'Não foi possível copiar a senha!')
+    }
 })
