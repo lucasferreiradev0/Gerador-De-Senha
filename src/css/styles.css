@@ -18,11 +18,10 @@ font-family: "Tektur", sans-serif;
 }
 
 body {
-    background-color: #93bfb7;
+    background: #93bfb7 url('../assets/wave.svg') no-repeat bottom center;
 }   
 
 #container {
-    background: url('../assets/wave.svg') no-repeat bottom center;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -138,6 +137,7 @@ input[type='checkbox']:hover {
 
 @media (max-width: 400px)  {
     #generator {
+        background: #93bfb7 url('../assets/wave.svg') no-repeat bottom center;
         min-width: 100vw;
         min-height: 100vh;
     }
