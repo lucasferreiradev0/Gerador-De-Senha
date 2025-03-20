@@ -135,7 +135,7 @@ input[type='checkbox']:hover {
     box-shadow: 0 0 5px #0F5959;
 }
 
-@media (max-width: 400px)  {
+@media (max-width: 480px)  {
     #generator {
         background: #93bfb7 url('../assets/wave.svg') no-repeat bottom center;
         min-width: 100vw;
