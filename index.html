@@ -7,28 +7,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/styles.css">
     <script src="src/js/script.js" defer></script>
-    <title>Gerador de Senhas</title>
+    <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+    <title>Generator Password</title>
 </head>
 <body>
     <section id="container">
-        <div id="container_gerador">
-            <h1>Gerador de Senhas</h1>
-            <label for="qtdeCaracteres">Tamanho <input type="number" id="qtdeCaracteres" min="4" max="20" value="12"></label>
-            <div id="box_ckecked">
-                <label for="lowercase"><input type="checkbox" name="lowercase" id="lowercase"> Letras Minúsculas</label>
-                <label for="uppercase"><input type="checkbox" name="uppercase" id="uppercase"> Letras Maiúsculas</label>
-                <label for="numeros"><input type="checkbox" name="numeros" id="numeros"> Números</label>
-                <label for="simbolos"><input type="checkbox" name="simbolos" id="simbolos"> Símbolos</label>
+        <div id="generator">
+            <h1><i class="fa-solid fa-unlock-keyhole"></i> Generator</h1>
+
+            <div id="box_generator">
+                <label class="character" for="character">
+                    CARACTERES: <input type="number" id="character" value="12">
+                </label>
+                <div id="checkbox">
+                    <label class="check" for="uppercase"><input type="checkbox" id="uppercase"> Letras Maiúsculas</label>
+                    <label class="check" for="lowercase"><input type="checkbox" id="lowercase"> Letras Minúsculas</label>
+                    <label class="check" for="number"><input type="checkbox" id="number"> Números</label>
+                    <label class="check" for="symbols"><input type="checkbox" id="symbols"> Símbolos</label>
+                </div>
+                <div id="box_password">
+                    <input type="text" id="password" placeholder="Aguadando senha...">
+                    <button type="button" id="btn_copy"><i class="fa-solid fa-copy"></i></button>
+                </div>
+                <button type="button" id="btn_generator"><i class="fa-solid fa-key"></i> Gerar Senha</button>
+                <div><strong>Status: </strong><span id="status">aguardando senha...</span></div>
             </div>
-            <div id="checkSenha"></div>
-            <div id="box_password">
-                <input type="text" id="password" min="4" max="20">
-                <button type="button" id="btn_copy">
-                    <i class="fa-regular fa-copy"></i>
-                </button>
-            </div>
-            <button type="button" id="btn_gerar">Gerar Senha</button>
-        </div>
+        </div>  
     </section>
 </body>
 </html>

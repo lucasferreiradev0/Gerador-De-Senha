@@ -1,101 +1,138 @@
 @charset "UTF-8";
+
+/* Poppins:
+font-family: 'Poppins', sans-serif;
+*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Tektur: 
+font-family: "Tektur", sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
 *{
-    margin: 0;
+    margin: 0;  
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #BFBFBF;
-    overflow: hidden;
-}
+    background-color: #93bfb7;
+}   
 
 #container {
+    background: url('../assets/wave.svg') no-repeat bottom center;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-#container_gerador {
-    background-color: #fff;
+#generator {
+    background: #93bfb7 url('../assets/bg-generator.svg') no-repeat center center;
+    padding: 20px;
     border-radius: 10px;
-    padding: 30px 0;
-    min-width: 30%;
+    box-shadow: 0 0 12px #01403482; 
+}
+
+#box_generator {
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
 }
+
 h1 {
-    text-transform: uppercase;
+    font-family: 'Tektur', sans-serif;
     font-weight: 400;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
     text-align: center;
-}
-#qtdeCaracteres {
-    width: 60px;
-    text-align: center;
-    font-size: 1.1rem;
-    color: #003840;
+    margin-bottom: 20px;
+    color: #2D3E40;
 }
 
-#box_ckecked {
+.character {
+    align-self: center;
+}
+
+#character {
+    border: 1px solid #014034;
+    font-size: 1.1rem;
+    width: 2.9rem;    
+    height: 2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#character:focus {
+    outline: none;
+}
+
+#checkbox {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
 
-    & label {
-        border: 1px solid #ccc;
-        padding: 5px;
-        cursor: pointer;
-        border-radius: 5px;
-        background-color: #cccccc8c;
-    } 
+.check {
+    padding: 5px;
+    border: 1px solid #014034;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
 }
-input[type="checkbox"] {
-    accent-color: #007369;
+
+input[type='checkbox'] {
+    accent-color: #014034;
 }
+
+input[type='checkbox']:hover {
+    accent-color: #057f69;
+}
+
 #box_password {
     display: flex;
+    gap: 5px;
+    & #password {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        border: 1px solid #014034;
+    }
+    & #password:focus {
+        outline: none;
+        border: 1px solid #014034;
+    }
+    & #btn_copy {
+        background-color: #038C73;
+        color: #676767;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color .5s ease-in-out, color .5s ease;
+    }
+    & #btn_copy:hover { 
+        background-color: #014034;
+        color: #fff;
+    }
 }
-#password{
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-right: none;
-    border-radius: 5px 0 0 5px;
-    background: none;
-}
-#password:focus {
-    outline: none;
-}
-#btn_copy{
-    background: none;
-    border: 1px solid #ccc;
-    border-left: none;
-    padding-inline: 5px;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    color: #666666;
-}
-#btn_copy:hover {
-    color: #000;
-}
-#btn_gerar {
+
+#btn_generator {
+    padding: 5px;
     border: none;
-    color: #fff;
-    background-color: #003840;
-    padding: 10px 20px;
+    background-color: #014034;
     border-radius: 5px;
-    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
     cursor: pointer;
-    margin-top: 5px;
-    transition: background-color .5s ease, box-shadow .5s ease;
+    transition: background-color .5s ease-in-out, box-shadow .5s ease-in;
 }
-#btn_gerar:hover {
-    background-color: #00262c;
-    box-shadow: 0 0 8px #00262c;
+
+#btn_generator:hover {
+    background-color: #0F5959;
+    box-shadow: 0 0 5px #0F5959;
 }
