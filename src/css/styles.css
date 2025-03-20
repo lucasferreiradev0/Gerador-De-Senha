@@ -103,18 +103,16 @@ input[type='checkbox']:hover {
         border: 1px solid #014034;
     }
     & #btn_copy {
-        background-color: #038C73;
-        color: #676767;
-        width: 2rem;
-        height: 2rem;
+        background: none;
+        color: #038C73;
+        font-size: 1.2rem;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color .5s ease-in-out, color .5s ease;
     }
     & #btn_copy:hover { 
-        background-color: #014034;
-        color: #fff;
+        color: #014034;
     }
 }
 
