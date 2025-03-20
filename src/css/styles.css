@@ -37,7 +37,6 @@ body {
 }
 
 #box_generator {
-    
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -135,4 +134,11 @@ input[type='checkbox']:hover {
 #btn_generator:hover {
     background-color: #0F5959;
     box-shadow: 0 0 5px #0F5959;
+}
+
+@media (max-width: 400px)  {
+    #generator {
+        min-width: 100vw;
+        min-height: 100vh;
+    }
 }
