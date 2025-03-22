@@ -139,4 +139,8 @@ input[type='checkbox']:hover {
         min-width: 100vw;
         min-height: 100vh;
     }
+        #showmodal {
+            font-size: 1rem;
+            text-wrap-mode: nowrap;
+        }
 }
